@@ -39,7 +39,7 @@ func main() {
 				data := strings.Fields(cubes)
 				n, err := strconv.Atoi(data[0])
 				if err != nil {
-					log.Fatalf("Unable to open file: %s", err.Error())
+					log.Fatalf(err.Error())
 				}
 				colour := data[1]
 				maxCubes := 0
